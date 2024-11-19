@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Merit</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="loading">
+        <h1>Loading Mission Merit...</h1>
+    </div>
+    <div id="content" style="display: none;">
+        <!-- Header -->
+        <header>
+            <marquee behavior="scroll" direction="left" class="scrolling-header">
+                Mission Merit of 10-B - Let's achieve together!
+            </marquee>
+        </header>
+        
+        <!-- Board Exam Countdown -->
+        <section id="countdown">
+            <h2>Board Exam Countdown</h2>
+            <div id="exam-countdown"></div>
+        </section>
+
+        <!-- Daily Motivation -->
+        <section id="motivation">
+            <h2>Daily Motivation</h2>
+            <div class="round-box">
+                <em>"Success is no accident. It's hard work, perseverance, learning, and sacrifice."</em>
+            </div>
+        </section>
+
+        <!-- Buttons -->
+        <section id="navigation-buttons">
+            <button onclick="navigateTo('tapasya')">Tapasya Mode</button>
+            <button onclick="navigateTo('maths')">Maths Questions</button>
+            <button onclick="navigateTo('test')">Test Section</button>
+            <button onclick="navigateTo('poll')">Daily Poll</button>
+        </section>
+
+        <!-- Rank Chart -->
+        <section id="rank-chart">
+            <h2>Ranks of the Week</h2>
+            <ul>
+                <li><span class="gold">?? Ali Sheikh</span></li>
+                <li><span class="silver">?? Sahil Jaiswal</span></li>
+                <li><span class="bronze">?? Anvesha Gupta</span></li>
+                <li>Toshika Kumbhalkar</li>
+            </ul>
+        </section>
+
+        <!-- To-Do List -->
+        <section id="todo">
+            <h2>To-Do List</h2>
+            <input type="text" id="task-input" placeholder="Add a task">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="task-list"></ul>
+            <p>Completion Percentage: <span id="completion-percentage">0%</span></p>
+        </section>
+
+        <!-- Session Timing -->
+        <section id="session-timing">
+            <h2>Session Timing</h2>
+            <div>
+                <input type="date" id="session-date">
+                <button>Set Date</button>
+            </div>
+            <p>Countdown: <span id="session-countdown">Not Started</span></p>
+            <label>
+                <input type="checkbox" id="session-attended"> Session Attended
+            </label>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Thank you for visiting! Made by Ali Yasin.</p>
+        </footer>
+    </div>
+</body>
+</html>
